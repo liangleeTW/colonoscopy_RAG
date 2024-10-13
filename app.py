@@ -20,7 +20,7 @@ def RAG(input_question):
         openai_api_key = openai_api_key,
         model="gpt-4o-mini",
     )
-    persist_directory = "/Users/leeliang/Desktop/0phd_202409/bclab/hospital_RAG2/db"
+    persist_directory = "db"
 
     embedding = OpenAIEmbeddings(openai_api_key=openai_api_key)
     db = Chroma(
